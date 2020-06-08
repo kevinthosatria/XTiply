@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = " css/studentlist.css">
+
+</head>
+
+<body>
+    <!-- The overlay -->
+    <div id="myMenu" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+  
+        <!-- Overlay content -->
+        <div class="overlay-content">
+         <a href="studentlist.html">View Student List</a>
+        <a href="teacherlogin.html">Log Out</a>
+    </div>
+  
+  </div>
+
+
+  
+  <div class = "topline">
+    <a href = "teacherhome.html"> <span class = "homebutton"> XTiply </span> </a>
+
+    <span class ="menubutton" style="color:white;font-size:30px;cursor:pointer" onclick="openMenu()">&#9776; MENU</span>
+  </div>
+
+  <div class = "student-list-container">
+    <div id = "student1">
+        <span><img src="css/img/studentpic.png"></span> 
+        <span class = "student-names"> Kevin </span>
+        <a href = "studentfeedback.html"> <span class = "student-feedback"> Post Feedback </span> </a>
+        <a href = "studentprogress.html"> <span class = "student-progress"> Check Grades </span> </a>
+    </div>
+    <div id = "student2">
+        <span><img src="css/img/studentpic2.jpg"></span>
+        <span class = "student-names"> James </span>
+        <a href = "studentfeedback.html"> <span class = "student-feedback"> Post Feedback </span> </a>
+        <a href = "studentprogress.html"> <span class = "student-progress"> Check Grades </span> </a>
+    </div>
+    <div id = "student3">
+        <span><img src="css/img/studentpic3.jpg"></span>
+        <span class = "student-names"> Michael </span>
+        <a href = "studentfeedback.html"> <span class = "student-feedback"> Post Feedback </span> </a>
+        <a href = "studentprogress.html"> <span class = "student-progress"> Check Grades </span> </a>
+    </div>
+
+  </div>
+
+
+  <script>
+    function openMenu() {
+      document.getElementById("myMenu").style.width = "100%";
+    }
+    
+    function closeMenu() {
+      document.getElementById("myMenu").style.width = "0%";
+    }
+  </script>
+
+
+</body>
+</html>

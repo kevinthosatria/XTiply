@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = " css/studentfeedback.css">
+
+</head>
+
+<body>
+    <!-- The overlay -->
+    <div id="myMenu" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+  
+        <!-- Overlay content -->
+        <div class="overlay-content">
+         <a href="studentlist.html">View Student List</a>
+        <a href="teacherlogin.html">Log Out</a>
+    </div>
+  
+  </div>
+
+
+  
+  <div class = "topline">
+    <a href = "teacherhome.html"> <span class = "homebutton"> XTiply </span> </a>
+
+    <span class ="menubutton" style="color:white;font-size:30px;cursor:pointer" onclick="openMenu()">&#9776; MENU</span>
+  </div>
+
+  <div class = "student-info" style = "text-align: center;">
+    <span style = "margin-left: 4%;">
+        <img src = "css/img/studentpic.png" style = "width: 70px; height: 70px; border-radius: 50%;">
+    </span>
+    <span style = "color: white; font-size: 30px; margin-left: 2%;">
+        Student Name: Kevin
+    </span>
+    <span style = "margin-left: 4%;">
+        <img src = "css/img/parentpic.jpg" style = "width: 70px; height: 70px; border-radius: 50%;">
+    </span>
+    <span style = "color: white; font-size: 30px; margin-left: 2%;">
+        Parent Name: Henry
+    </span>
+  </div>
+  
+  <p style = "color: white; font-size: 35px; text-align: center;">WRITE FEEDBACK BELOW</p>
+  <div>
+      <textarea rows = "9" cols= "170" style = "margin-left: 9%;">
+
+      </textarea>
+  </div>
+
+  <div >
+      <p style = "color: white; font-size: 80px; border: 2px solid white; width: 400px; text-align: center; margin-left: 35%;">SUBMIT</p>
+  </div>
+
+
+  <script>
+    function openMenu() {
+      document.getElementById("myMenu").style.width = "100%";
+    }
+    
+    function closeMenu() {
+      document.getElementById("myMenu").style.width = "0%";
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+html, body {
+    background: url('img/studenthome.jpg') repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+  
+  }
+  .overlay {
+        
+      height: 100%;
+      width: 0%;
+      position: fixed; 
+      z-index: 1; 
+      right: 0;
+      top: 0;
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0, 0.9); 
+      overflow-x: hidden; 
+      transition: 0.6s; 
+    }
+    
+  
+    .overlay-content {
+      position: relative;
+      top: 25%; 
+      width: 100%; 
+      text-align: center; 
+      margin-top: 30px; 
+    }
+    
+  
+    .overlay a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 40px;
+      color: #818181;
+      display: block; 
+      transition: 0.3s; 
+    }
+    
+  
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: 60px;
+    }
+    
+  
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+  
+    .topline {
+      position: relative;
+      height: 20%;
+      
+
+    }
+  
+    .menubutton {
+      float: right;
+      position: relative;
+      right: 5%;
+      margin-top: 2%;
+    }
+  
+    .homebutton {
+      float: left;
+      position: relative;
+      left: 5%;
+      margin-top: 1%;
+      color:white; 
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    .question-number-container{
+        position: fixed;
+        height: 10%;
+        width: 40%;
+        font-size: 50px;
+        color: white;
+        margin-top: 10%;
+        margin-left: 30%;
+        
+    }
+    .exercise-container {
+        width: 100%;
+        position: fixed;
+        height: 75%;
+        margin-top: 18%;
+        background-color:;
+        left: 0;
+    }
+
+    .question-container {
+        text-align: center;
+        height: 20%;
+    }
+
+    .question-container span {
+        margin-top: 1%;
+        font-size: 80px;
+        color: white;
+        margin: 2%;
+    
+    }
+
+    #answer {
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 80px;
+        width: 160px;
+        margin: 0 10px;
+        border-bottom: 5px solid white;
+    }
+
+
+
+    .back-container {
+        text-align: center;
+        width: 20%;
+        margin-left: 20%;
+        margin-right: 5%;
+        margin-top: 8%;
+        border: 2px solid white;
+        color: white;
+        font-size: 80px;
+        display:inline-block;
+    }
+
+    .next-container{
+        text-align: center;
+        width: 20%;
+        margin-left: 5%;
+        margin-right: 20%;
+        margin-top: 8%;
+        border: 2px solid white;
+        color: white;
+        font-size: 80px;
+        display: inline-block;
+    }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "css/exercise.css">
+
+</head>
+
+<body>
+    <!-- The overlay -->
+    <div id="myMenu" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+  
+        <!-- Overlay content -->
+        <div class="overlay-content">
+         <a href="multiplicationtable.html">View Table :)</a>
+         <a href="#">Exercise!</a>
+         <a href="parenthome.html">Switch to Parent Mode</a>
+        <a href="login.html">Log Out</a>
+        </div>
+        
+    </div>
+
+
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <div class = "topline">
+    <a href = "studenthome.html"> <span class = "homebutton"> XTiply </span> </a>
+
+    <span class ="menubutton" style="color:white;font-size:30px;cursor:pointer" onclick="openMenu()">&#9776; MENU</span>
+  </div>
+
+  <div class = "question-number-container">
+      Question Number <span id ="question-number">1</span> / 10
+  </div>
+
+  <div class = "exercise-container">
+      <div class = "question-container">
+          <span id ="firstnumber">9</span><span> X </span><span id = "secondnumber">9</span><span> = </span><input type = "text" id = "answer">   
+      </div>
+
+      <div class = "options-container">
+          <div class = "back-container"> BACK </div><div class = "next-container"> NEXT</div>
+      </div>
+
+  </div>
+
+    <script type = "text/javascript">
+        // for menu
+        function openMenu() {
+        document.getElementById("myMenu").style.width = "100%";
+        }
+        
+        function closeMenu() {
+        document.getElementById("myMenu").style.width = "0%";
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "css/parenthome.css">
+
+</head>
+
+<body>
+    <!-- The overlay -->
+    <div id="myMenu" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+  
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="viewgrades.html">View Child's Grades</a>
+        <a href="viewfeedback.html">View Teacher Feedback</a>
+        <a href="studenthome.html">Switch to Student Mode</a>
+        <a href="login.html">Log Out</a>
+      </div>
+      
+    </div>
+
+
+
+  
+  <div class = "topline">
+    <a href = "parenthome.html"> <span class = "homebutton"> XTiply </span> </a>
+
+    <span class ="menubutton" style="color:white;font-size:50px;cursor:pointer" onclick="openMenu()">&#9776; MENU</span>
+  </div>
+
+  <div class = "profilepic">
+    <img src = "css/img/parentpic.jpg" alt = "profilepic">
+
+    <div class = "welcometext">
+      <p1>Welcome, Henry!</p>
+    </div>
+  </div>
+
+  <div class = "hometext">
+    <p>Click on the upper-right menu to get started.</p>
+    <p>Click on the upper-left XTiply to go back home.</p>
+  </div>
+
+
+
+  <script>
+    function openMenu() {
+      document.getElementById("myMenu").style.width = "100%";
+    }
+    
+    function closeMenu() {
+      document.getElementById("myMenu").style.width = "0%";
+    }
+    </script>
+
+
+</body>
+</html>

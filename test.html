@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<table id = "mytable">
+</table>
+
+<script type = "text/javascript">
+    // for menu
+    function openMenu() {
+    document.getElementById("myMenu").style.width = "100%";
+    }
+    
+    function closeMenu() {
+    document.getElementById("myMenu").style.width = "0%";
+    }
+
+    // for table
+    var table = document.getElementById('mytable');
+    var output = "";
+    for (var = i; i<= 10; i++){
+        output += "<tr>";
+        for(var j = 1; j <=10; j++) {
+            output += "<td>" + i + j + "<td>";
+        }
+        output += "</tr>";
+    }
+    table.innerHTML = output;
+
+
+</script>
+</body>
+</html>

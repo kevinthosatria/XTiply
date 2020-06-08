@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel = "stylesheet" href = "css/viewfeedback.css">
+</head>
+
+<body>
+    <!--The overlay-->
+    <div id = "myMenu" class = "overlay">
+
+        <!--closebtn-->
+        <a href = "javascript:void(0)" class = "closebtn" onclick = "closeMenu()"> &times;</a>
+
+        <!--Overlay content-->
+        <div class = "overlay-content">
+            <a href="viewgrades.html">View Child's Grades</a>
+            <a href="viewfeedback.html">View Teacher Feedback</a>
+            <a href="studenthome.html">Switch to Student Mode</a>
+           <a href="login.html">Log Out</a>
+        </div>
+
+    </div>
+
+    <!--Non-Overlay starts here-->
+
+    <div class = "topline">
+        <a href = "parenthome.html"> <span class = "homebutton"> XTiply </span> </a>
+        <span class = "menubutton" onclick= "openMenu()">&#9776;MENU</span>
+    </div>
+
+
+    <script>
+        function openMenu(){
+            document.getElementById("myMenu").style.width = "100%";
+        }
+
+        function closeMenu() {
+            document.getElementById("myMenu").style.width = "0%";
+        }
+    </script>
+
+    <div class = "view-feedback-container">
+        <p style = "color: white; font-size: 50px;text-align: center; margin-top: 0; border-bottom: 2px solid white; width: 40%; margin: auto;"> View Teacher Feedback</p>
+        <table id = "feedback-table">
+            <tr>
+                <th>Teacher Name</th>
+                <th>Feedback Content</th>/th>
+                <th>Date of Feedback</th>
+            </tr>
+            <tr>
+                <td>John Appleseed</td>
+                <td>"Kevin has improved dramatically. He made barely made any more mistakes in multiplication."</td>
+                <td>20/03/2020</td>
+            </tr>
+            <tr>
+                <td>John Appleseed</td>
+                <td>"Kevin has improved his multiplication skills, however he still has trouble with table 8."</td>
+                <td>13/03/2020</td>
+            </tr>
+            <tr>
+                <td>John Appleseed</td>
+                <td>"Kevin is a bright child, however he is weak in multiplication. He has trouble with tables such as 7, 8 and 6."</td>
+                <td>6/03/2020</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+ 
+</html>

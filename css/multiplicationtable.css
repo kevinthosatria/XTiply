@@ -1,0 +1,117 @@
+html, body {
+    background: url('img/studenthome.jpg') repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+  
+  }
+  .overlay {
+        
+      height: 100%;
+      width: 0%;
+      position: fixed; 
+      z-index: 1; 
+      right: 0;
+      top: 0;
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0, 0.9); 
+      overflow-x: hidden; 
+      transition: 0.6s; 
+    }
+    
+  
+    .overlay-content {
+      position: relative;
+      top: 25%; 
+      width: 100%; 
+      text-align: center; 
+      margin-top: 30px; 
+    }
+    
+  
+    .overlay a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 40px;
+      color: #818181;
+      display: block; 
+      transition: 0.3s; 
+    }
+    
+  
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: 60px;
+    }
+    
+  
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+  
+    .topline {
+      position: relative;
+      height: 20%;
+      
+
+    }
+  
+    .menubutton {
+      float: right;
+      position: relative;
+      right: 5%;
+      margin-top: 2%;
+    }
+  
+    .homebutton {
+      float: left;
+      position: relative;
+      left: 5%;
+      margin-top: 1%;
+      color:white; 
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    .multiplication-table {
+        position: fixed;
+        margin-top: 10%;
+        padding-left: 20%;
+        padding-right: auto;        
+
+    }
+
+
+    table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        width: 75px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    th {
+        color: white;
+    }
+
+    td:hover {
+        background-color: black;
+    }
+    
+

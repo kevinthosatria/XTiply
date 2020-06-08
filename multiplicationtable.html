@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "css/multiplicationtable.css">
+
+</head>
+
+<body>
+    <!-- The overlay -->
+    <div id="myMenu" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+  
+        <!-- Overlay content -->
+        <div class="overlay-content">
+         <a href="multiplicationtable.html">View Table :)</a>
+         <a href="exercise.html">Exercise!</a>
+         <a href="parenthome.html">Switch to Parent Mode</a>
+        <a href="login.html">Log Out</a>
+        </div>
+        
+    </div>
+
+
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <div class = "topline">
+    <a href = "studenthome.html"> <span class = "homebutton"> XTiply </span> </a>
+
+    <span class ="menubutton" style="color:white;font-size:30px;cursor:pointer" onclick="openMenu()">&#9776; MENU</span>
+  </div>
+
+  <div class = "multiplication-table">
+    <table id = "mytable" style="color: white;">
+
+
+    </table>
+  </div>
+
+
+
+
+
+
+    <script type = "text/javascript">
+        // for menu
+        function openMenu() {
+        document.getElementById("myMenu").style.width = "100%";
+        }
+        
+        function closeMenu() {
+        document.getElementById("myMenu").style.width = "0%";
+        }
+
+        // for table
+        var table = document.getElementById('mytable');
+        var output = "";
+        for (i = 1; i<= 10; i++){
+
+            output += "<tr>";
+            for(var j = 1; j <=10; j++) {
+                if(i == 1 && j == 1){
+                    output += "<th>&times</th>";
+                }
+                else {
+                    if(i == 1 || j == 1) {
+                        output += "<th>" + i*j + "</th>";
+                    }
+                    else {
+                        output += "<td>" + i*j + "</td>";
+                    }
+
+                }
+            }
+            output += "</tr>";
+        }
+        table.innerHTML = output;
+
+
+    </script>
+
+</body>
+</html>
